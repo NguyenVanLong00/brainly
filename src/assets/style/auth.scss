@@ -1,0 +1,80 @@
+@import "./variables";
+
+.login-wrapper {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    display: grid;
+    grid-template-columns: repeat(6, 64px);
+    column-gap: 24px;
+    padding: 40px 0;
+    border-radius: 4px;
+    .item {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .login-form {
+    width: 100%;
+  }
+  
+  .input-pill:first-of-type {
+    margin-top: 0;
+  }
+  .button-pill {
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.1s;
+    background-color: rgba($color: $primary, $alpha: 0.5);
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 1);
+    }
+  }
+  .forgot-password {
+    margin: 24px auto;
+  }
+  .or-hr {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: $light;
+    div {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-45%);
+    }
+    span {
+      padding: 0 4px;
+      background-color: $dark;
+    }
+  }
+  
+  .login-third-party {
+    width: 100%;
+    .icon {
+      margin: 0 8px;
+    }
+  }
+  .login-google {
+    margin-top:24px;
+    background-color: unset;
+    border: 2px solid rgba($color: $white, $alpha: 0.5);
+    &:hover{
+        background-color: unset;
+      }
+  }
+  .login-facebook {
+    margin-top:16px;
+    background-color: #4285F4;
+    &:hover{
+      background-color: #4285F4;
+    }
+  }
+  .promiss {
+    margin-top: 24px;
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
